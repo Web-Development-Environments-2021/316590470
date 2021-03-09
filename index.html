@@ -105,8 +105,11 @@
 <br/>
 <br/>
 <hr class="hr-text" data-content="give me a like">
-<!-- give me a like -->
-<div class="fb-like" data-href=" https://web-development-environments-2021.github.io/assignment1-shiritab/" data-layout="button_count" data-action="like"></div>
+<!-- give me a like  https://web-development-environments-2021.github.io/assignment1-shiritab/ -->
+<div class="box">
+  <button id="heartImg" onclick="increaseLike()"></button>
+  <p id="numLikes">Likes</p>
+</div>
 <br/>
 <br/>
 <br/>
@@ -202,10 +205,20 @@ $(function(){
   });
 });
 </script>
+
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script type="text/javascript">
+$(function(){
+
+});
+</script>
+
+
+</script>
 </body>
 </html>

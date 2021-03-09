@@ -75,3 +75,43 @@
 	color: palevioletred;
 	background-color: #fcfcfa;
 }
+
+.box button{
+	/* display: block; */
+	/* margin-left: auto;
+	margin-right: auto;  */
+	/* width: 50%; */
+	/* align-self: center; */
+	background: url('social-media-facebook-like-button-heart-emoticon-facebook-live-love-png-a08c99ec55427ad3144353f6ba6f11c9.png');
+	background-repeat: no-repeat;
+	background-size: 42px 42px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border-color: transparent;
+	opacity: 0.7;
+}
+
+.box button:hover{
+	/* background-color: black; */
+	border-color: transparent;
+	border-radius: 50%;
+	/* background-color: pink; */
+	background: url('social-media-facebook-like-button-heart-emoticon-facebook-live-love-png-a08c99ec55427ad3144353f6ba6f11c9.png');
+	background-repeat: no-repeat;
+	background-size: 42px 42px;
+	opacity: 1;
+}
+
+.box{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	/* width: 50%; */
+	/* background-color: gray; */
+	justify-content: center;
+}
+
+.box p{
+	padding-left: 10px;
+}
