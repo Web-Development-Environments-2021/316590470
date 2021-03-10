@@ -7,10 +7,16 @@
 	opacity: 1;
 }
 
-#mainPic, #qrcode, #video{
+#mainPic, #qrcode{
 	margin: 10px auto 20px;
 	display: block;
 	border: 5px solid gray;
+}
+
+#video{
+	margin: 10px auto 20px;
+	display: block;
+	border: 2px solid gray;
 }
 
 #grannyLogo
@@ -134,8 +140,39 @@ table{
 	padding: 14px 16px;
 }
 
-/* #qrcode{
+#qrcode{
 	margin: 10px auto 20px;
 	display: block;
 	border: 4px dashed gray;
-} */
+}
+
+#contactMe{
+	width: 20%;
+	height: fit-content;
+	border: 2px solid gray;
+	margin: 10px auto 20px;
+	display: block;
+	flex-direction: column;
+	text-align: center;
+}
+
+#contactMe p{
+	color: palevioletred;
+	margin: 10px auto 20px;
+	display: block;
+}
+
+#contactMe input, textarea
+{
+	width: 80%;
+	color: palevioletred;
+	margin: 10px auto 20px;
+	display: block;
+}
+
+#contactMe #submit{
+	width: 30%;
+	color: grey;
+	background-color: lightyellow;
+	border-radius: 20%;
+}
