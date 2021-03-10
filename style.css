@@ -7,7 +7,7 @@
 	opacity: 1;
 }
 
-#mainPic{
+#mainPic, #qrcode, #video{
 	margin: 10px auto 20px;
 	display: block;
 	border: 5px solid gray;
@@ -134,3 +134,8 @@ table{
 	padding: 14px 16px;
 }
 
+/* #qrcode{
+	margin: 10px auto 20px;
+	display: block;
+	border: 4px dashed gray;
+} */
