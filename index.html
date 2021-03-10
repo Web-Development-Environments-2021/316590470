@@ -59,18 +59,6 @@
       </table>
     </td>
   </tr>
-  <!-- <tr>
-    <th>CV</th>
-  </tr>
-  <tr>
-    <th>hobbies</th>
-  </tr>
-  <tr>
-    <th>interests</th>
-  </tr>
-  <tr>
-    <th>life idol</th>
-  </tr> -->
 </table>
 <br/>
 <br/>
@@ -78,12 +66,6 @@
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -145,31 +127,17 @@
 <hr class="hr-text" data-content="give me a like">
 <!-- give me a like  https://web-development-environments-2021.github.io/assignment1-shiritab/ -->
 <div class="box">
-  <button id="heartImg" onclick="increaseLike()"></button>
-  <p id="numLikes">Likes</p>
+  <button id="heartImg" onclick="addLike()"></button>
+  <p class="Likes" id="Likes">0</p>
+  <p>Likes</p>
 </div>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="qrcoder" class="section">
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <hr class="hr-text" data-content="scan my code">
 <!-- scan my code -->
 <br/>
@@ -250,12 +218,13 @@ $(function(){
  });​
  </script>
 
-<script type="text/javascript">
-$(function(){
-
-});
+<script>
+  function addLike() {
+    const elLikes = document.querySelector('.Likes')
+    if (+elLikes.innerHTML > 0) return
+    else elLikes.innerHTML = +elLikes.innerHTML + 1
+  }
 </script>
-
 
 </script>
 </body>
