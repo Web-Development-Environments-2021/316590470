@@ -7,7 +7,8 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="NdyzNmQQ"></script>
 <div class="topnav" id="menu">
-  <img id="grannyLogo" src="grannyLogo.jpg" width="45" height="45"></img>
+  <img id="grannyLogo" src="grannyLogo.jpg" width="65" height="45"></img>
+  <h1 class="nameOfWeb">Nana</h1>
   <a href="#about">About Me</a>
   <a href="#photos">My Photos</a>
   <a href="#playlist">My Playlist</a>
@@ -23,7 +24,7 @@
 <br/>
 <br/>
 <div>
-  <img id="mainPic" src="me.jpg" width="200px" height="201px"></img>
+  <img id="mainPic" src="nana.jpeg" width="200px" height="300px">
 </div>
 <br/>
 <hr class="hr-text" data-content="about me">
@@ -76,18 +77,45 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
 <hr class="hr-text" data-content="my photos">
+<br/>
+<br/>
 <!-- my photos -->
-<br/>
-<br/>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="nana2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="nana3.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="nana4.jpg" style="width:80%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 <br/>
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
 <br/>
 
 <hr class="hr-text" data-content="my playlist">
@@ -138,6 +166,26 @@
 <section id="spa" class="section">
 <hr class="hr-text" data-content="ans">
 <!-- ans -->
+<table class="QandA" border="1">
+  <tr>
+    <td>Question No.</td>
+    <td>Web 1.0</td>
+    <td>Web 2.0</td>
+    <td>Web 3.0</td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>#2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 <br/>
 <br/>
 <br/>
@@ -201,6 +249,36 @@ $(function(){
     if (+elLikes.innerHTML > 0) elLikes.innerHTML = +elLikes.innerHTML - 1
     else elLikes.innerHTML = +elLikes.innerHTML + 1
   }
+</script>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
 </body>
 </html>
