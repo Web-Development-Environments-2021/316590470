@@ -13,6 +13,11 @@
 	border: 5px solid gray;
 }
 
+.fb-like{
+	position:relative;
+	left:45%;
+}
+
 #video{
 	margin: 10px auto 20px;
 	display: block;
@@ -87,6 +92,12 @@
 	color: palevioletred;
 	background-color: #fcfcfa;
 }
+
+/* .fb-like{
+	margin-left: auto;
+	margin-right: auto;
+	display:flex;
+} */
 
 .box button{
 	/* display: block; */
