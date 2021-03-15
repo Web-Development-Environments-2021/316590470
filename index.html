@@ -4,6 +4,8 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="NdyzNmQQ"></script>
 <div class="topnav" id="menu">
   <img id="grannyLogo" src="grannyLogo.jpg" width="45" height="45"></img>
   <a href="#about">About Me</a>
@@ -114,6 +116,7 @@
   <p class="Likes" id="Likes">0</p>
   <p>Likes</p>
 </div>
+<div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-shiritab/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -163,15 +166,16 @@
 <br/>
 <form id="contactMe" method="get" action="mailto:shirit@post.bgu.ac.il" enctype="text/plain">
   <p>Email</p>
-  <input type="email">
+  <input type="email" placeholder="example@gmail.com">
   <p>Subject</p>
   <input id="subject" name="subject" type="text">
   <p>Content</p>
-  <textarea id="body" name="body" rows="5"></textarea>
+  <textarea id="body" name="body" rows="5" data-emoji="true" style="resize: none;"></textarea>
   <br/>
   <input id="submit" type="submit" value="Submit">
 </form>
 <br/>
+
 <br/>
 </section>
 
@@ -194,11 +198,9 @@ $(function(){
 <script>
   function addLike() {
     const elLikes = document.querySelector('.Likes')
-    if (+elLikes.innerHTML > 0) return
+    if (+elLikes.innerHTML > 0) elLikes.innerHTML = +elLikes.innerHTML - 1
     else elLikes.innerHTML = +elLikes.innerHTML + 1
   }
-</script>
-
 </script>
 </body>
 </html>
