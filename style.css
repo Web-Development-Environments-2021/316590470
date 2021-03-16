@@ -186,7 +186,7 @@ table{
 
 #contactMe input, textarea
 {
-	width: 80%;
+	width: 100%;
 	color: palevioletred;
 	margin: 10px auto 20px;
 	display: block;
@@ -293,3 +293,5 @@ table{
 	text-align: center;
 	color: brown;
 }
+
+
