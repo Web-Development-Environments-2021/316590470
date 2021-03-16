@@ -7,6 +7,10 @@
 	opacity: 1;
 }
 
+body{
+	background-color:peachpuff;
+}
+
 #mainPic, #qrcode{
 	margin: 10px auto 20px;
 	display: block;
@@ -203,7 +207,7 @@ table{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   margin: 0px auto;
 }
@@ -283,4 +287,9 @@ table{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.use-case{
+	text-align: center;
+	color: brown;
 }
