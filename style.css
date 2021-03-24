@@ -175,7 +175,7 @@ table{
 {
 	width: 100%;
 	color: palevioletred;
-	/* margin: 10px auto 20px; */
+	margin: 10px auto 20px;
 	display: block;
 	border-radius: 5%;
 }
@@ -187,8 +187,13 @@ table{
 	border-radius: 20%;
 }
 
-.QandA {
-	border-color: palevioletred;
+.QandA{
+	border-color: transparent;
+}
+
+.QandA tr{
+	/* border-color: palevioletred; */
+	border: 3px solid palevioletred;
 }
 
 * {box-sizing:border-box}
