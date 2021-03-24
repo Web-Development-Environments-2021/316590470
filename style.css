@@ -73,13 +73,13 @@ body{
   }
 
 .hr-text {
-	line-height: 1em;
+	line-height: 1vh;
 	position: relative;
 	outline: 0;
 	border: 0;
 	color: black;
 	text-align: center;
-	height: 1.5em;
+	height: 3.5vh;
 	opacity: 0.75;
 }
 
@@ -100,7 +100,7 @@ body{
 	display: inline-block;
 	color: black;
 	padding: 0 .5em;
-	line-height: 1.5em;
+	line-height: 3.5vh;
 	color: palevioletred;
 	background-color: #fcfcfa;
 }
