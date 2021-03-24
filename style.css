@@ -10,13 +10,12 @@
 body{
 	background-color:peachpuff;
 	margin:auto;
-	/* align-content: center; */
 	text-align: center;
 }
 
 #mainPic, #qrcode{
-	margin: 10px auto 20px;
-	display: block;
+	/* margin: 10px auto 20px; */
+	/* display: block; */
 	border: 5px solid rgb(209, 183, 183);
 }
 
@@ -26,8 +25,8 @@ body{
 }
 
 #video{
-	margin: 10px auto 20px;
-	display: block;
+	/* margin: 10px auto 20px;
+	display: block; */
 	border: 2px solid gray;
 }
 
@@ -168,7 +167,7 @@ table{
 
 #contactMe p{
 	color: rgb(216, 112, 147);
-	margin: 10px auto 20px;
+	/* margin: 10px auto 20px; */
 	display: block;
 }
 
@@ -176,7 +175,7 @@ table{
 {
 	width: 100%;
 	color: palevioletred;
-	margin: 10px auto 20px;
+	/* margin: 10px auto 20px; */
 	display: block;
 	border-radius: 5%;
 }
