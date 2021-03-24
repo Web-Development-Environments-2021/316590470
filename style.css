@@ -14,7 +14,7 @@ body{
 #mainPic, #qrcode{
 	margin: 10px auto 20px;
 	display: block;
-	border: 5px solid gray;
+	border: 5px solid rgb(209, 183, 183);
 }
 
 .fb-like{
@@ -99,23 +99,11 @@ body{
 	color: black;
 	padding: 0 .5em;
 	line-height: 1.5em;
-	/* color: #818078; */
 	color: palevioletred;
 	background-color: #fcfcfa;
 }
 
-/* .fb-like{
-	margin-left: auto;
-	margin-right: auto;
-	display:flex;
-} */
-
 .box button{
-	/* display: block; */
-	/* margin-left: auto;
-	margin-right: auto;  */
-	/* width: 50%; */
-	/* align-self: center; */
 	background: url('social-media-facebook-like-button-heart-emoticon-facebook-live-love-png-a08c99ec55427ad3144353f6ba6f11c9.png');
 	background-repeat: no-repeat;
 	background-size: 42px 42px;
@@ -127,10 +115,8 @@ body{
 }
 
 .box button:hover{
-	/* background-color: black; */
 	border-color: transparent;
 	border-radius: 50%;
-	/* background-color: pink; */
 	background: url('social-media-facebook-like-button-heart-emoticon-facebook-live-love-png-a08c99ec55427ad3144353f6ba6f11c9.png');
 	background-repeat: no-repeat;
 	background-size: 42px 42px;
@@ -141,8 +127,6 @@ body{
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	/* width: 50%; */
-	/* background-color: gray; */
 	justify-content: center;
 }
 
@@ -157,7 +141,7 @@ table{
 	color: palevioletred;
 	font-size: 16px;
 	margin: 0 auto;
-	width: fit-content;
+	width: 50%;
 	height:fit-content;
 	padding: 14px 16px;
 }
@@ -171,15 +155,16 @@ table{
 #contactMe{
 	width: 20%;
 	height: fit-content;
-	border: 2px solid gray;
+	border: 2px dotted gray;
 	margin: 10px auto 20px;
 	display: block;
 	flex-direction: column;
 	text-align: center;
+	border-radius: 10%;
 }
 
 #contactMe p{
-	color: palevioletred;
+	color: rgb(216, 112, 147);
 	margin: 10px auto 20px;
 	display: block;
 }
@@ -190,6 +175,7 @@ table{
 	color: palevioletred;
 	margin: 10px auto 20px;
 	display: block;
+	border-radius: 5%;
 }
 
 #contactMe #submit{
@@ -294,4 +280,43 @@ table{
 	color: brown;
 }
 
+.multiple_cols:after{
+	width: 50%;
+	content: "";
+	display: block;
+	clear: both;	
+}
 
+.col{
+	/* float: left; */
+	width: 55%;
+	padding: 2px;
+	opacity: 0.6;
+	border: 2px groove rgb(182, 64, 64);
+	margin: 1px auto 5px;
+	display: block;
+	border-style: inset;
+	/* border: 5px solid gray; */
+}
+
+.col p{
+	color: rgb(228, 72, 124);
+}
+
+.col:hover{
+	width: 55%;
+	padding: 2px;
+	opacity: 1;
+	border: 2px groove rgb(182, 64, 64);
+	margin: 1px auto 5px;
+	border-style: outset;
+	display: block;
+}
+
+.headers{
+	font-style: italic;
+	color: palevioletred;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 17px;
+}
