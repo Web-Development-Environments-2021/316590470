@@ -9,6 +9,9 @@
 
 body{
 	background-color:peachpuff;
+	margin:auto;
+	/* align-content: center; */
+	text-align: center;
 }
 
 #mainPic, #qrcode{
@@ -18,8 +21,8 @@ body{
 }
 
 .fb-like{
-	position:relative;
-	left:45%;
+	/* position:relative; */
+	left:10%;
 }
 
 #video{
